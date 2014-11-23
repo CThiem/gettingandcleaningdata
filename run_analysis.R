@@ -28,4 +28,7 @@ data = data[,-meanfreq]
 
 tidy_data = ddply(data,.(Subject,Activity),summarise_each,funs(mean))
 
+tidy_data$Activity = factor(tidy_data$Activity)
+levels(tidy_data$Activity) = read.csv("./activity_labels.txt",header=FALSE,sep="",stringsAsFactors=FALSE)$V2
+
 write.table(tidy_data,file="tidy_data.txt",row.names=FALSE)
