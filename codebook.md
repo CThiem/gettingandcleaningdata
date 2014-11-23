@@ -44,6 +44,7 @@ fBodyGyroMag
 
 fBodyGyroJerkMag
 
+
 The set of variables that were estimated from these signals are: 
 
 mean(): Mean value OVER EACH ACTIVITY FOR EACH SUBJECT
@@ -64,8 +65,11 @@ tBodyGyroJerkMean
 
 
 IN ADDITION THE TIDY DATASET CONTAINS THE FOLLOWING VARIABLES
+
 Subject - Subject-Id - Integer between 1 and 30
+
 Activity - Activity-Id - Factor Variable with levels:
+
 1 WALKING
 2 WALKING_UPSTAIRS
 3 WALKING_DOWNSTAIRS
