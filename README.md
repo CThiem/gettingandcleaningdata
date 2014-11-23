@@ -21,4 +21,5 @@ run_analysis.R does the following:
 9. Search for all variables containing "meanFreq" and save their column numbers
 10. Remove the variables from Step 9 from the dataset
 11. Create the tidy dataset, where the average of observations for each subject and each activity are calculated for each variable. This is done by using summarise_each in combination with ddply. Results are grouped by Subject and Activity.
-12. Write the tidy data into the "tidy_data.txt" file.
+12. Make sure that Activity labels are not lost.
+13. Write the tidy data into the "tidy_data.txt" file.
